@@ -10,16 +10,16 @@ Logré que el modelo predijese con una precisión del 85% en 15 epocas gracias a
 **Paquetes:** pandas, numpy, sklearn, matplotlib, seaborn, tensorflow, keras, cv2.
 
 # Explicación de datos utilizados
-El dataset consta de 35887 imagenes divididas en 7 categorías y a su vez dividido en conjunto de entrenamiento y evaluación (28709 y 7178 imagenes respectivamente)
+El dataset consta de 35887 imagenes divididas en 7 categorías y a su vez dividido en conjunto de entrenamiento y evaluación (28709 y 7178 imagenes respectivamente)  
 
-Las 7 cateorías son las siguientes:
-Angry (958 para test y 3995 para train)
-Disgust (111 para test y 436 para train)
-Fear (1024 para test y 4097 para train)
-Happy (1774 para test y 7215 para train)
-Neutral (1233 para test y 4965 para train)
-Sad (1247 para test y 4830 para train)
-Surprise (831 para test y 3171 para train)
+Las 7 cateorías son las siguientes:  
+Angry (958 para test y 3995 para train)   
+Disgust (111 para test y 436 para train)   
+Fear (1024 para test y 4097 para train)   
+Happy (1774 para test y 7215 para train)   
+Neutral (1233 para test y 4965 para train)   
+Sad (1247 para test y 4830 para train)   
+Surprise (831 para test y 3171 para train)   
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/PrivateTest_1161501.jpg "Imagn de test 1")
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/PrivateTest_1769758.jpg "Imagn de test 2")
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/PrivateTest_2352334.jpg "Imagn de test 3")
@@ -36,11 +36,11 @@ Para esta ocasión trabajé la transferencia de conocimientos de una red neurona
 Luego entrené la red neuronal por 25 epocas (en lotes de 10 en 10 epocas por vez) utilizando el GPU de Google Colab, de esta manera no se consumen tantos recursos del ordenador, obteniendo una precisión de la red neuronal del 85%, porcentaje más que suficiente para la detección de la mayoría de emociones faciales.
 
 ## Utilizando el modelo
-Para evaluar el modelo utilizamos imagenes descargadas de internet, de modo que nos aseguramos que la red no las ha visto antes.
+Para evaluar el modelo utilizamos imagenes descargadas de internet, de modo que nos aseguramos que la red no las ha visto antes.   
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/Angry.jfif "Angry")
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/Fear.jfif "Fear")
 
-y por último utilizamos el módulo de CV2 y haarcascade_frontalfacepara que nos permita acceder a la camara web de nuestro ordenador y poder detectar en tiempo real las emociones detectadas en los fotogramas que la camara captaba.
+y por último utilizamos el módulo de CV2 y haarcascade_frontalfacepara que nos permita acceder a la camara web de nuestro ordenador y poder detectar en tiempo real las emociones detectadas en los fotogramas que la camara captaba.   
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/Realtime%20Felicidad.PNG "Real time felicidad")
 ![alt text](https://github.com/estebanmgr/Deteccion_de_emociones_faciales/blob/main/Im%C3%A1genes/Realtime%20neutral.PNG "Real time neutral")
 
