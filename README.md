@@ -5,8 +5,8 @@ En este proyecto creé y entrené una red neuronal para la detección de emocion
 Logré que el modelo predijese con una precisión del 85% en 15 epocas gracias a la transferencia de conocimiento de un modelo pre entrenado de la librería de keras.preprocessing y ajustandola muy poco, para la mayoría de los casos este porcentaje de acierto será más que necesario para detectar las emociones. El nombre de la red utilizada fue la de "MobileNetV2".
 
 ## Recursos y códiigo utilizado 
-**Versión de Python:** 3.7
-**Versión de Tensorflow:** 2.5.0
+**Versión de Python:** 3.7  
+**Versión de Tensorflow:** 2.5.0  
 **Paquetes:** pandas, numpy, sklearn, matplotlib, seaborn, tensorflow, keras, cv2.
 
 # Explicación de datos utilizados
